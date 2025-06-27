@@ -111,7 +111,7 @@ def group(entries):
 
 def render(groups):
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
-    html = ["<html><head><meta charset='utf-8'><title>News</title><link rel='stylesheet' href='styles.css'></head><body>"]
+    html = ["<html><head><meta charset='utf-8'><title>News</title><link rel='stylesheet' href='styles.css'><meta name='viewport' content='width=device-width, initial-scale=1.0'/></head><body>"]
     for section in ["Today", "This Week"]:
         items = groups.get(section, [])
         if not items: continue
