@@ -1,0 +1,27 @@
+:root {
+  --line-height: 1.75;
+  --font-family: 'PT Serif', Georgia, Cambria, 'Times New Roman', Times, serif;
+  --color-text: #212121;
+  --color-text-secondary: #bdbdbd;
+  --color-text-visited: #757575;
+  --color-background: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #fafafa;
+    --color-text-secondary: #bdbdbd;
+    --color-text-visited: #757575;
+    --color-background: #212121;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-family: var(--font-family); }
+body { background: var(--color-background); color: var(--color-text); line-height: var(--line-height); padding: 0 2rem 2rem 2rem; }
+footer { margin-top: 2rem; font-style: italic; color: var(--color-text-secondary); }
+h2 { margin: 2rem 0 1rem 0; }
+ul, li { list-style: none; padding: 0; }
+a { cursor: pointer; color: var(--text-color); text-decoration: none; }
+em { padding: 0 0.5rem; color: var(--color-text-secondary); }
+a:visited, a:visited em { color: var(--color-text-visited); }
